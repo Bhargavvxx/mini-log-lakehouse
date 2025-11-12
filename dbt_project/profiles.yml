@@ -1,0 +1,7 @@
+mini_log_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../warehouse/warehouse.duckdb'   # << relative to dbt_project/
+      schema: 'main'

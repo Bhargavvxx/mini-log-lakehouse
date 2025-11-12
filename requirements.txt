@@ -1,0 +1,8 @@
+pandas
+pyarrow
+duckdb
+dbt-core
+dbt-duckdb
+fastapi
+uvicorn
+streamlit

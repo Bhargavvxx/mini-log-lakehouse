@@ -1,0 +1,12 @@
+name: 'mini_log_warehouse'
+version: '1.0.0'
+config-version: 2
+profile: 'mini_log_warehouse'
+model-paths: ['models']
+target-path: 'target'
+clean-targets: ['target']
+models:
+  mini_log_warehouse:
+    +materialized: view
+    marts:
+      +materialized: table

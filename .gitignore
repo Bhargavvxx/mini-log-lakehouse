@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv/
+.env.local
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data & artifacts
+warehouse/warehouse.duckdb
+data/processed/
+# keep a tiny sample raw log; otherwise uncomment next line to ignore all raw
+# data/raw/
+
+# Streamlit/UVicorn cache
+.streamlit/
+uvicorn.log
+
+# Prefect local cache
+.prefect/
+
+# dbt
+dbt_project/target/
+dbt_project/logs/

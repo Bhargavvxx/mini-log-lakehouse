@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: stg_logs
+    columns:
+      - name: ts
+        tests: [not_null]
+      - name: status
+        tests: [not_null]
+      - name: bytes_sent
+        tests: [not_null]
+      - name: endpoint
+        tests: [not_null]
+
+  - name: fct_requests_hourly
+    columns:
+      - name: date
+        tests: [not_null]
+      - name: hour
+        tests: [not_null]
+      - name: endpoint
+        tests:
+          - not_null
+      - name: requests
+        tests: [not_null]
+      - name: errors
+        tests: [not_null]
