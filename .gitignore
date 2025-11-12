@@ -4,8 +4,8 @@ __pycache__/
 *.pyo
 *.pyd
 *.egg-info/
-.env
 .venv/
+.env
 .env.local
 
 # OS/editor
@@ -16,16 +16,10 @@ Thumbs.db
 # Data & artifacts
 warehouse/warehouse.duckdb
 data/processed/
-# keep a tiny sample raw log; otherwise uncomment next line to ignore all raw
-# data/raw/
+#data/raw/   # uncomment to ignore all raw logs
 
-# Streamlit/UVicorn cache
-.streamlit/
-uvicorn.log
-
-# Prefect local cache
-.prefect/
-
-# dbt
+# Tools
 dbt_project/target/
 dbt_project/logs/
+.prefect/
+.streamlit/
